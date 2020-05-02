@@ -14,3 +14,5 @@ demos/alignapi/bin/o/
 *.ipr
 *.iws
 /target/
+.idea
+test-data
