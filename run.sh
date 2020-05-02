@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Fetch dependencies and build project
-# cd s-match
+cd s-match
 mvn clean package
 
-DATA_PATH="/Users/steffen/OneDrive/UniMA/MasterThesis/Data"
+DATA_PATH="../../Data"
 
 # Convert txt hierarchies to xml input
 mvn exec:java -Dexec.mainClass=it.unitn.disi.smatch.MatchManager -Dexec.args="convert $DATA_PATH/taxo_l.txt $DATA_PATH/taxo_l.xml -config=conf/s-match-Tab2XML.properties"
